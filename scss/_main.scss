@@ -1,0 +1,408 @@
+.introBox {
+  margin-top: 85px;
+  position: relative;
+  .introContentBox {
+    @include flexy-box();
+    height: 100%;
+    h1 {
+      @include text(48px, 700, 55px, $heading-color);
+    }
+    p {
+      @include text(20px, 300, 30px, $paragraph-color);
+      margin-top: 25px;
+    }
+    .introBtnBox {
+      margin-top: 45px;
+      .btn {
+        @include btn(15px 40px, $primary-color, none, 50px);
+      }
+    }
+  }
+  .introImgBox {
+    img {
+      width: 100%;
+    }
+  }
+  &::before {
+    content: url("../assets/icons/element.svg");
+    position: absolute;
+    top: -15%;
+    left: -19%;
+  }
+}
+
+.servicesBox {
+  margin-top: 190px;
+  .service-heading {
+    text-align: center;
+    h2 {
+      margin-bottom: 40px;
+      @include text(35px, 700, 55px, $heading-color);
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 55px;
+        height: 2px;
+        background-color: $heading-color;
+        border-radius: 5px;
+        right: 47%;
+        top: 130%;
+      }
+    }
+    p {
+      @include text(18px, 300, 30px, $paragraph-color);
+    }
+  }
+  .services-content {
+    margin-top: 80px;
+    position: relative;
+    &::before {
+      content: url("../assets/images/services-bg.svg");
+      position: absolute;
+      top: -6%;
+      right: 50%;
+      z-index: -1;
+    }
+    &::after {
+      content: url("../assets/icons/services-element.svg");
+      position: absolute;
+      top: 32.5%;
+      left: 92%;
+      z-index: -1;
+    }
+    .my-card {
+      background-color: #fff;
+      box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+      border-radius: 20px;
+      padding: 40px 50px;
+      height: 335px;
+      transition: all 0.5s;
+      &:hover {
+        transform: translateY(-10px);
+      }
+      h4 {
+        a {
+          @include text(25px, 700, 55px, $heading-color);
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      p {
+        @include text(15px, 300, 30px, $paragraph-color);
+      }
+    }
+    .card-1 {
+      h4 {
+        margin-top: 20px;
+      }
+    }
+    .card-2 {
+      h4 {
+        margin-top: 25px;
+      }
+    }
+    .card-3 {
+      h4 {
+        margin-top: 15px;
+      }
+    }
+    .card-4 {
+      h4 {
+        margin-top: 25px;
+      }
+    }
+    .card-5 {
+      h4 {
+        margin-top: 45px;
+      }
+    }
+    .card-6 {
+      h4 {
+        margin-top: 25px;
+      }
+    }
+    .second-cards {
+      margin-top: 40px;
+    }
+    .servicesBtnBox {
+      margin-top: 70px;
+      text-align: center;
+      .btn {
+        @include btn(15px 50px, transparent, $primary-color, 55px);
+        font-size: 18px;
+        font-weight: 700;
+        transition: all 0.5s;
+        &:hover {
+          background-color: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.providersBox {
+  margin-top: 220px;
+  .imgBox {
+    img {
+      width: 100%;
+    }
+  }
+  .contentBox {
+    height: 100%;
+    @include flexy-box();
+    padding-left: 140px;
+    h2 {
+      position: relative;
+      @include text(35px, 700, 55px, $heading-color);
+      &::after {
+        content: "";
+        position: absolute;
+        width: 55px;
+        height: 2px;
+        background-color: $heading-color;
+        border-radius: 5px;
+        left: 0;
+        top: 115%;
+      }
+    }
+    p {
+      margin-top: 40px;
+      @include text(18px, 300, 30px, $paragraph-color);
+    }
+    .btnBox {
+      margin-top: 40px;
+      .btn {
+        @include btn(10px 50px, transparent, $primary-color, 55px);
+        font-size: 18px;
+        font-weight: 700;
+        transition: all 0.5s;
+        &:hover {
+          background-color: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.downloadBox {
+  margin-top: 230px;
+  .contentBox {
+    .download-content {
+      h2 {
+        position: relative;
+        @include text(35px, 700, 50px, $heading-color);
+        &::after {
+          content: "";
+          position: absolute;
+          width: 55px;
+          height: 2px;
+          background-color: $heading-color;
+          border-radius: 5px;
+          left: 0;
+          top: 120%;
+        }
+      }
+      p {
+        margin-top: 40px;
+        @include text(18px, 300, 30px, $paragraph-color);
+      }
+      .btnBox {
+        margin-top: 40px;
+        .btn {
+          @include btn(10px 40px, transparent, $primary-color, 55px);
+          font-size: 18px;
+          font-weight: 700;
+          transition: all 0.5s;
+          svg {
+            path {
+              transition: all 0.5s;
+            }
+          }
+          &:hover {
+            background-color: $primary-color;
+            color: #fff;
+            svg {
+              path {
+                fill: #fff;
+              }
+            }
+          }
+          svg {
+            margin-left: 20px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+  .imgBox {
+    img {
+      width: 100%;
+    }
+  }
+}
+.commentsBox {
+  margin-top: 270px;
+  position: relative;
+  &::before {
+    content: url("../assets/icons/comment-element.svg");
+    position: absolute;
+    top: -4%;
+    right: -4%;
+  }
+  &::after {
+    content: url("../assets/icons/comment-element-2.svg");
+    position: absolute;
+    top: 60%;
+    left: -5%;
+    z-index: -1;
+  }
+  .comment-box {
+    background: $main-gradient;
+    border-radius: 25px;
+    padding: 65px 120px 65px;
+    .contentBox-2 {
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      .content-2 {
+        p {
+          @include text(20px, 400, 30px, $second-color);
+        }
+      }
+    }
+  }
+  .comment-heading {
+    position: relative;
+    text-align: center;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 2px;
+      background-color: $second-color;
+      border-radius: 5px;
+      left: 48%;
+      top: 150%;
+    }
+    h2 {
+      @include text(35px, 700, 50px, $second-color);
+    }
+  }
+  .comment-content {
+    margin-top: 105px;
+    .customer {
+      display: flex;
+      .imgBox {
+        img {
+          border-radius: 50%;
+          border: 2px solid #fff;
+        }
+      }
+      .contentBox {
+        @include flexy-box();
+        .content {
+          padding-left: 20px;
+          h4 {
+            @include text(20px, 700, 30px, $second-color);
+          }
+          span {
+            @include text(18px, 400, 20px, $second-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+.articleBox {
+  margin-top: 220px;
+  .article-heading {
+    position: relative;
+    h2 {
+      text-align: center;
+      @include text(35px, 700, 55px, $heading-color);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 2px;
+      background-color: $heading-color;
+      border-radius: 5px;
+      left: 48%;
+      top: 130%;
+    }
+  }
+  .article-content {
+    position: relative;
+    margin-top: 70px;
+    &::before {
+      content: url("../assets/icons/card-element.svg");
+      position: absolute;
+      top: -8%;
+      left: -4%;
+      z-index: -1;
+    }
+    &::after {
+      content: url("../assets/images/card-bg-img.svg");
+      position: absolute;
+      top: -10%;
+      right: -18.4%;
+      z-index: -1;
+    }
+    .my-card {
+      box-shadow: $shadow;
+      background-color: $second-color;
+      border-radius: 20px;
+      .imgBox {
+        overflow: hidden;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        img {
+          width: 100%;
+          transition: all 0.5s;
+        }
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .content {
+        padding: 25px 35px 35px;
+        h4 {
+          @include text(20px, 700, 30px, $heading-color);
+        }
+        p {
+          @include text(15px, 300, 30px, $paragraph-color);
+        }
+        a {
+          @include text(17px, 600, 28px, $primary-color);
+          position: relative;
+          &::after {
+            content: url("../assets/icons/Vector-2.svg");
+            position: absolute;
+            left: 120%;
+          }
+        }
+      }
+    }
+    .btnBox {
+      margin-top: 70px;
+      text-align: center;
+      .btn {
+        @include btn(10px 40px, transparent, $primary-color, 55px);
+        @include text(18px, 700, 30px, $primary-color);
+        transition: all 0.5s;
+        &:hover {
+          background-color: $primary-color;
+          color: $second-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,830 @@
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+nav {
+  margin-top: 30px;
+}
+
+nav .nav-item .nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7d7987;
+  transition: all 0.5s;
+}
+
+nav .nav-item .nav-link:hover {
+  color: #1f1534;
+}
+
+nav .nav-item .active {
+  font-weight: 700;
+  color: #1f1534;
+}
+
+nav .nav-item:not(:last-child) {
+  padding-right: 30px;
+}
+
+.introBox {
+  margin-top: 85px;
+  position: relative;
+}
+
+.introBox .introContentBox {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.introBox .introContentBox h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 55px;
+  color: #000000;
+}
+
+.introBox .introContentBox p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #7d7987;
+  margin-top: 25px;
+}
+
+.introBox .introContentBox .introBtnBox {
+  margin-top: 45px;
+}
+
+.introBox .introContentBox .introBtnBox .btn {
+  padding: 15px 40px;
+  background-color: #458ff6;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+}
+
+.introBox .introImgBox img {
+  width: 100%;
+}
+
+.introBox::before {
+  content: url("../assets/icons/element.svg");
+  position: absolute;
+  top: -15%;
+  left: -19%;
+}
+
+.servicesBox {
+  margin-top: 190px;
+}
+
+.servicesBox .service-heading {
+  text-align: center;
+}
+
+.servicesBox .service-heading h2 {
+  margin-bottom: 40px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 55px;
+  color: #000000;
+  position: relative;
+}
+
+.servicesBox .service-heading h2::after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 5px;
+  right: 47%;
+  top: 130%;
+}
+
+.servicesBox .service-heading p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #7d7987;
+}
+
+.servicesBox .services-content {
+  margin-top: 80px;
+  position: relative;
+}
+
+.servicesBox .services-content::before {
+  content: url("../assets/images/services-bg.svg");
+  position: absolute;
+  top: -6%;
+  right: 50%;
+  z-index: -1;
+}
+
+.servicesBox .services-content::after {
+  content: url("../assets/icons/services-element.svg");
+  position: absolute;
+  top: 32.5%;
+  left: 92%;
+  z-index: -1;
+}
+
+.servicesBox .services-content .my-card {
+  background-color: #fff;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+  padding: 40px 50px;
+  height: 335px;
+  transition: all 0.5s;
+}
+
+.servicesBox .services-content .my-card:hover {
+  transform: translateY(-10px);
+}
+
+.servicesBox .services-content .my-card h4 a {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 55px;
+  color: #000000;
+}
+
+.servicesBox .services-content .my-card h4 a:hover {
+  text-decoration: none;
+}
+
+.servicesBox .services-content .my-card p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #7d7987;
+}
+
+.servicesBox .services-content .card-1 h4 {
+  margin-top: 20px;
+}
+
+.servicesBox .services-content .card-2 h4 {
+  margin-top: 25px;
+}
+
+.servicesBox .services-content .card-3 h4 {
+  margin-top: 15px;
+}
+
+.servicesBox .services-content .card-4 h4 {
+  margin-top: 25px;
+}
+
+.servicesBox .services-content .card-5 h4 {
+  margin-top: 45px;
+}
+
+.servicesBox .services-content .card-6 h4 {
+  margin-top: 25px;
+}
+
+.servicesBox .services-content .second-cards {
+  margin-top: 40px;
+}
+
+.servicesBox .services-content .servicesBtnBox {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.servicesBox .services-content .servicesBtnBox .btn {
+  padding: 15px 50px;
+  background-color: transparent;
+  color: #458ff6;
+  border: 2px solid #458ff6;
+  border-radius: 55px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.servicesBox .services-content .servicesBtnBox .btn:hover {
+  background-color: #458ff6;
+  color: #fff;
+}
+
+.providersBox {
+  margin-top: 220px;
+}
+
+.providersBox .imgBox img {
+  width: 100%;
+}
+
+.providersBox .contentBox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 140px;
+}
+
+.providersBox .contentBox h2 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 55px;
+  color: #000000;
+}
+
+.providersBox .contentBox h2::after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 5px;
+  left: 0;
+  top: 115%;
+}
+
+.providersBox .contentBox p {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #7d7987;
+}
+
+.providersBox .contentBox .btnBox {
+  margin-top: 40px;
+}
+
+.providersBox .contentBox .btnBox .btn {
+  padding: 10px 50px;
+  background-color: transparent;
+  color: #458ff6;
+  border: 2px solid #458ff6;
+  border-radius: 55px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.providersBox .contentBox .btnBox .btn:hover {
+  background-color: #458ff6;
+  color: #fff;
+}
+
+.downloadBox {
+  margin-top: 230px;
+}
+
+.downloadBox .contentBox .download-content h2 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #000000;
+}
+
+.downloadBox .contentBox .download-content h2::after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 5px;
+  left: 0;
+  top: 120%;
+}
+
+.downloadBox .contentBox .download-content p {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #7d7987;
+}
+
+.downloadBox .contentBox .download-content .btnBox {
+  margin-top: 40px;
+}
+
+.downloadBox .contentBox .download-content .btnBox .btn {
+  padding: 10px 40px;
+  background-color: transparent;
+  color: #458ff6;
+  border: 2px solid #458ff6;
+  border-radius: 55px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.downloadBox .contentBox .download-content .btnBox .btn svg path {
+  transition: all 0.5s;
+}
+
+.downloadBox .contentBox .download-content .btnBox .btn:hover {
+  background-color: #458ff6;
+  color: #fff;
+}
+
+.downloadBox .contentBox .download-content .btnBox .btn:hover svg path {
+  fill: #fff;
+}
+
+.downloadBox .contentBox .download-content .btnBox .btn svg {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.downloadBox .imgBox img {
+  width: 100%;
+}
+
+.commentsBox {
+  margin-top: 270px;
+  position: relative;
+}
+
+.commentsBox::before {
+  content: url("../assets/icons/comment-element.svg");
+  position: absolute;
+  top: -4%;
+  right: -4%;
+}
+
+.commentsBox::after {
+  content: url("../assets/icons/comment-element-2.svg");
+  position: absolute;
+  top: 60%;
+  left: -5%;
+  z-index: -1;
+}
+
+.commentsBox .comment-box {
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 25px;
+  padding: 65px 120px 65px;
+}
+
+.commentsBox .comment-box .contentBox-2 {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.commentsBox .comment-box .contentBox-2 .content-2 p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+}
+
+.commentsBox .comment-heading {
+  position: relative;
+  text-align: center;
+}
+
+.commentsBox .comment-heading::after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 5px;
+  left: 48%;
+  top: 150%;
+}
+
+.commentsBox .comment-heading h2 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #fff;
+}
+
+.commentsBox .comment-content {
+  margin-top: 105px;
+}
+
+.commentsBox .comment-content .customer {
+  display: flex;
+}
+
+.commentsBox .comment-content .customer .imgBox img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.commentsBox .comment-content .customer .contentBox {
+  display: flex;
+  align-items: center;
+}
+
+.commentsBox .comment-content .customer .contentBox .content {
+  padding-left: 20px;
+}
+
+.commentsBox .comment-content .customer .contentBox .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+}
+
+.commentsBox .comment-content .customer .contentBox .content span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+}
+
+.articleBox {
+  margin-top: 220px;
+}
+
+.articleBox .article-heading {
+  position: relative;
+}
+
+.articleBox .article-heading h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 55px;
+  color: #000000;
+}
+
+.articleBox .article-heading::after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 5px;
+  left: 48%;
+  top: 130%;
+}
+
+.articleBox .article-content {
+  position: relative;
+  margin-top: 70px;
+}
+
+.articleBox .article-content::before {
+  content: url("../assets/icons/card-element.svg");
+  position: absolute;
+  top: -8%;
+  left: -4%;
+  z-index: -1;
+}
+
+.articleBox .article-content::after {
+  content: url("../assets/images/card-bg-img.svg");
+  position: absolute;
+  top: -10%;
+  right: -18.4%;
+  z-index: -1;
+}
+
+.articleBox .article-content .my-card {
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.articleBox .article-content .my-card .imgBox {
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.articleBox .article-content .my-card .imgBox img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.articleBox .article-content .my-card .imgBox:hover img {
+  transform: scale(1.1);
+}
+
+.articleBox .article-content .my-card .content {
+  padding: 25px 35px 35px;
+}
+
+.articleBox .article-content .my-card .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+}
+
+.articleBox .article-content .my-card .content p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #7d7987;
+}
+
+.articleBox .article-content .my-card .content a {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #458ff6;
+  position: relative;
+}
+
+.articleBox .article-content .my-card .content a::after {
+  content: url("../assets/icons/Vector-2.svg");
+  position: absolute;
+  left: 120%;
+}
+
+.articleBox .article-content .btnBox {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.articleBox .article-content .btnBox .btn {
+  padding: 10px 40px;
+  background-color: transparent;
+  color: #458ff6;
+  border: 2px solid #458ff6;
+  border-radius: 55px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #458ff6;
+  transition: all 0.5s;
+}
+
+.articleBox .article-content .btnBox .btn:hover {
+  background-color: #458ff6;
+  color: #fff;
+}
+
+footer {
+  margin-top: 200px;
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  padding: 120px 190px 110px;
+  position: relative;
+}
+
+footer::before {
+  content: url("../assets/icons/footer-element-2.svg");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer::after {
+  content: url("../assets/icons/footer-element.svg");
+  position: absolute;
+  top: -15%;
+  right: 5%;
+  z-index: -1;
+}
+
+footer .footerBox .f-logo h4 {
+  position: relative;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+  left: 12%;
+}
+
+footer .footerBox .f-logo h4::before {
+  content: url("../assets/icons/Ellipse.svg");
+  position: absolute;
+  top: -18%;
+  left: -12%;
+}
+
+footer .footerBox .f-logo h4::after {
+  content: url("../assets/icons/T.svg");
+  position: absolute;
+  top: 5%;
+  left: -9%;
+}
+
+footer .footerBox .f-content p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+footer .footerBox .f-content p:last-child {
+  margin-top: 30px;
+}
+
+footer .footerBox .footer-list ul {
+  list-style-type: none;
+}
+
+footer .footerBox .footer-list ul h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #fff;
+}
+
+footer .footerBox .footer-list ul li a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 33px;
+  color: #fff;
+}
+
+footer .footerBox .footer-list ul li a::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  bottom: -10%;
+  left: 0;
+  transition: all 0.5s;
+}
+
+footer .footerBox .footer-list ul li a:hover {
+  text-decoration: none;
+}
+
+footer .footerBox .footer-list ul li a:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .servicesBox .services-content::after {
+    left: 88%;
+  }
+  .servicesBox .services-content .my-card br {
+    display: none;
+  }
+  .servicesBox .services-content .my-card h4 a {
+    line-height: 35px;
+  }
+  .providersBox .imgBox {
+    height: 100%;
+    display: flex;
+  }
+  .providersBox br {
+    display: none;
+  }
+  .article-content br {
+    display: none;
+  }
+  .article-content::after {
+    display: none;
+  }
+  .article-content .my-card .content {
+    height: 320px;
+  }
+  footer .footerBox .f-logo h4 {
+    left: 0;
+  }
+  footer .footerBox .f-logo h4::after {
+    display: none;
+  }
+  footer .footerBox .f-logo h4::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    margin-top: 20px;
+    text-align: center;
+  }
+  nav .nav-item {
+    padding-right: 30px;
+  }
+  .introImgBox {
+    height: 100%;
+    display: flex;
+  }
+  .intro-content h1 br {
+    display: none;
+  }
+  .intro-content p br {
+    display: none;
+  }
+  .servicesBox .services-content::after {
+    left: 83%;
+  }
+  .servicesBox .services-content br {
+    display: none;
+  }
+  .servicesBox .services-content .my-card {
+    height: 459px;
+  }
+  .servicesBox br {
+    display: none;
+  }
+  .downloadBox .contentBox br {
+    display: none;
+  }
+  .downloadBox .imgBox {
+    height: 100%;
+    display: flex;
+  }
+  .providers-content br {
+    display: none;
+  }
+  .commentsBox .comment-heading::after {
+    left: 45%;
+  }
+  .commentsBox .comment-content .customer {
+    display: block;
+  }
+  .commentsBox .comment-content .customer .contentBox {
+    margin-top: 10px;
+  }
+  .article-content .my-card {
+    height: 510px;
+  }
+  .article-content .my-card br {
+    display: none;
+  }
+  footer::after {
+    top: -10%;
+  }
+  footer .footer-list ul {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  nav ul {
+    margin-top: 20px;
+    text-align: center;
+  }
+  nav .nav-item {
+    padding-right: 30px;
+  }
+  .introBox::before {
+    display: none;
+  }
+  .introImgBox {
+    display: none;
+  }
+  .services-content .my-card {
+    margin-top: 40px;
+  }
+  .services-content::after {
+    display: none;
+  }
+  .providersBox .contentBox {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .downloadBox .imgBox {
+    margin-top: 20px;
+  }
+  .commentsBox::before {
+    top: -6%;
+  }
+  .commentsBox .comment-heading::after {
+    left: 42%;
+    top: 120%;
+  }
+  .commentsBox .comment-box {
+    padding: 65px 15px 65px;
+  }
+  .commentsBox .comment-box .customer .contentBox .content {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  .commentsBox .comment-box .customer .contentBox .content span {
+    display: none;
+  }
+  .articleBox .article-heading::after {
+    left: 43%;
+    top: 120%;
+  }
+  .articleBox .article-content::before {
+    top: -1%;
+  }
+  .articleBox .article-content .my-card {
+    margin-bottom: 40px;
+  }
+  footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  footer::after {
+    top: -8%;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .articleBox .article-content .my-card {
+    height: 570px;
+  }
+}

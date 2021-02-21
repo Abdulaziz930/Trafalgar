@@ -1,0 +1,80 @@
+footer {
+  margin-top: 200px;
+  background: $footer-gradient;
+  padding: 120px 190px 110px;
+  position: relative;
+  &::before {
+    content: url("../assets/icons/footer-element-2.svg");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &::after {
+    content: url("../assets/icons/footer-element.svg");
+    position: absolute;
+    top: -15%;
+    right: 5%;
+    z-index: -1;
+  }
+  .footerBox {
+    .f-logo {
+      h4 {
+        position: relative;
+        @include text(25px, 700, 30px, $second-color);
+        left: 12%;
+        &::before {
+          content: url("../assets/icons/Ellipse.svg");
+          position: absolute;
+          top: -18%;
+          left: -12%;
+        }
+        &::after {
+          content: url("../assets/icons/T.svg");
+          position: absolute;
+          top: 5%;
+          left: -9%;
+        }
+      }
+    }
+    .f-content {
+      p {
+        @include text(18px, 300, 28px, $second-color);
+        margin-top: 20px;
+      }
+      p:last-child {
+        margin-top: 30px;
+      }
+    }
+    .footer-list {
+      ul {
+        list-style-type: none;
+        h4 {
+          @include text(20px, 700, 60px, $second-color);
+        }
+        li {
+          a {
+            position: relative;
+            @include text(18px, 300, 33px, $second-color);
+            &::before {
+              content: "";
+              position: absolute;
+              background-color: $second-color;
+              width: 0;
+              height: 2px;
+              border-radius: 5px;
+              bottom: -10%;
+              left: 0;
+              transition: all 0.5s;
+            }
+            &:hover {
+              &::before {
+                width: 100%;
+              }
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

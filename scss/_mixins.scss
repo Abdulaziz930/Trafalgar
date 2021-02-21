@@ -1,0 +1,27 @@
+@mixin text($f-size, $f-weight, $line-height, $color) {
+  font-size: $f-size;
+  font-weight: $f-weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin flexy-box() {
+  display: flex;
+  align-items: center;
+}
+
+@mixin btn($padding, $bg-color, $border, $radius) {
+  padding: $padding;
+  background-color: $bg-color;
+  @if ($bg-color == transparent) {
+    color: $primary-color;
+  } @else if($bg-color == $primary-color) {
+    color: #fff;
+  }
+  @if ($border == none) {
+    border: none;
+  } @else {
+    border: 2px solid $border;
+  }
+  border-radius: $radius;
+}
