@@ -345,6 +345,7 @@ nav .nav-item:not(:last-child) {
 .commentsBox {
   margin-top: 270px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .commentsBox::before {

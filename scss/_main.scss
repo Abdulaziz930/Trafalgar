@@ -247,6 +247,7 @@
 .commentsBox {
   margin-top: 270px;
   position: relative;
+  overflow-x: hidden;
   &::before {
     content: url("../assets/icons/comment-element.svg");
     position: absolute;
