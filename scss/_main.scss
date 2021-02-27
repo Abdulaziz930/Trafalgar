@@ -31,6 +31,24 @@
   }
 }
 
+.backToTop {
+  position: fixed;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+  padding: 15px 28px;
+  right: 2%;
+  font-size: 30px;
+  color: $primary-color;
+  z-index: 3;
+  transition: all 0.5s;
+  opacity: 0;
+  cursor: pointer;
+  &:hover {
+    background-color: $primary-color;
+    color: $second-color;
+  }
+}
+
 .servicesBox {
   margin-top: 190px;
   .service-heading {

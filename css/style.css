@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   overflow-x: hidden;
@@ -75,6 +79,25 @@ nav .nav-item:not(:last-child) {
   position: absolute;
   top: -15%;
   left: -19%;
+}
+
+.backToTop {
+  position: fixed;
+  border: 2px solid #458ff6;
+  border-radius: 50%;
+  padding: 15px 28px;
+  right: 2%;
+  font-size: 30px;
+  color: #458ff6;
+  z-index: 3;
+  transition: all 0.5s;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.backToTop:hover {
+  background-color: #458ff6;
+  color: #fff;
 }
 
 .servicesBox {
@@ -688,6 +711,9 @@ footer .footerBox .footer-list ul li a:hover::before {
   .article-content .my-card .content {
     height: 320px;
   }
+  .backToTop {
+    bottom: 5%;
+  }
   footer .footerBox .f-logo h4 {
     left: 0;
   }
@@ -815,6 +841,9 @@ footer .footerBox .footer-list ul li a:hover::before {
   }
   .articleBox .article-content .my-card {
     margin-bottom: 40px;
+  }
+  .backToTop {
+    padding: 5px 20px;
   }
   footer {
     padding-left: 0;
