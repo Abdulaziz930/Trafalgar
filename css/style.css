@@ -7,6 +7,19 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #458ff6;
+}
+
 nav {
   margin-top: 30px;
 }
@@ -16,6 +29,7 @@ nav .nav-item .nav-link {
   font-weight: 400;
   line-height: 20px;
   color: #7d7987;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -38,8 +52,12 @@ nav .nav-item:not(:last-child) {
 }
 
 .introBox .introContentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
 
@@ -90,6 +108,7 @@ nav .nav-item:not(:last-child) {
   font-size: 30px;
   color: #458ff6;
   z-index: 3;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   opacity: 0;
   cursor: pointer;
@@ -158,15 +177,18 @@ nav .nav-item:not(:last-child) {
 
 .servicesBox .services-content .my-card {
   background-color: #fff;
-  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  -webkit-box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+          box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   border-radius: 20px;
   padding: 40px 50px;
   height: 335px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .servicesBox .services-content .my-card:hover {
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .servicesBox .services-content .my-card h4 a {
@@ -228,6 +250,7 @@ nav .nav-item:not(:last-child) {
   border-radius: 55px;
   font-size: 18px;
   font-weight: 700;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -246,8 +269,12 @@ nav .nav-item:not(:last-child) {
 
 .providersBox .contentBox {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 140px;
 }
 
@@ -290,6 +317,7 @@ nav .nav-item:not(:last-child) {
   border-radius: 55px;
   font-size: 18px;
   font-weight: 700;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -341,10 +369,12 @@ nav .nav-item:not(:last-child) {
   border-radius: 55px;
   font-size: 18px;
   font-weight: 700;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .downloadBox .contentBox .download-content .btnBox .btn svg path {
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -395,8 +425,12 @@ nav .nav-item:not(:last-child) {
 
 .commentsBox .comment-box .contentBox-2 {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .commentsBox .comment-box .contentBox-2 .content-2 p {
@@ -434,6 +468,8 @@ nav .nav-item:not(:last-child) {
 }
 
 .commentsBox .comment-content .customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -443,8 +479,12 @@ nav .nav-item:not(:last-child) {
 }
 
 .commentsBox .comment-content .customer .contentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .commentsBox .comment-content .customer .contentBox .content {
@@ -514,7 +554,8 @@ nav .nav-item:not(:last-child) {
 }
 
 .articleBox .article-content .my-card {
-  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  -webkit-box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+          box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   background-color: #fff;
   border-radius: 20px;
 }
@@ -527,11 +568,13 @@ nav .nav-item:not(:last-child) {
 
 .articleBox .article-content .my-card .imgBox img {
   width: 100%;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .articleBox .article-content .my-card .imgBox:hover img {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .articleBox .article-content .my-card .content {
@@ -581,6 +624,7 @@ nav .nav-item:not(:last-child) {
   font-weight: 700;
   line-height: 30px;
   color: #458ff6;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -674,6 +718,7 @@ footer .footerBox .footer-list ul li a::before {
   border-radius: 5px;
   bottom: -10%;
   left: 0;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -697,6 +742,8 @@ footer .footerBox .footer-list ul li a:hover::before {
   }
   .providersBox .imgBox {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .providersBox br {
@@ -735,6 +782,8 @@ footer .footerBox .footer-list ul li a:hover::before {
   }
   .introImgBox {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .intro-content h1 br {
@@ -760,6 +809,8 @@ footer .footerBox .footer-list ul li a:hover::before {
   }
   .downloadBox .imgBox {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .providers-content br {
